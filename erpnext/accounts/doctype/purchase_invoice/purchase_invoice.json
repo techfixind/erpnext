@@ -319,6 +319,7 @@
    "search_index": 1
   },
   {
+   "default": "Now",
    "fieldname": "posting_time",
    "fieldtype": "Time",
    "label": "Posting Time",
@@ -1650,7 +1651,11 @@
  "idx": 204,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2025-04-09 16:49:22.175081",
+=======
+ "modified": "2025-08-04 19:19:11.380664",
+>>>>>>> b3cebd87c8 (chore: added now as default value for the posting time)
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Purchase Invoice",

@@ -72,6 +72,7 @@
    "reqd": 1
   },
   {
+   "default": "Now",
    "fieldname": "posting_time",
    "fieldtype": "Time",
    "in_list_view": 1,
@@ -183,7 +184,11 @@
  "idx": 1,
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2022-05-11 09:10:26.327652",
+=======
+ "modified": "2025-08-04 19:21:20.179658",
+>>>>>>> b3cebd87c8 (chore: added now as default value for the posting time)
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Stock Reconciliation",
@@ -203,6 +208,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "search_fields": "posting_date",
  "show_name_in_global_search": 1,
  "sort_field": "modified",

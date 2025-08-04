@@ -301,6 +301,7 @@
    "search_index": 1
   },
   {
+   "default": "Now",
    "fieldname": "posting_time",
    "fieldtype": "Time",
    "label": "Posting Time",
@@ -1573,7 +1574,11 @@
  "icon": "fa fa-file-text",
  "is_submittable": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2025-07-17 16:51:40.886083",
+=======
+ "modified": "2025-08-04 22:22:31.471752",
+>>>>>>> b3cebd87c8 (chore: added now as default value for the posting time)
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "POS Invoice",
