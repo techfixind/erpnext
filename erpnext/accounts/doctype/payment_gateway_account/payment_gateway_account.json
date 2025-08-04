@@ -6,6 +6,7 @@
  "field_order": [
   "payment_gateway",
   "payment_channel",
+  "company",
   "is_default",
   "column_break_4",
   "payment_account",
@@ -69,12 +70,30 @@
    "fieldname": "payment_channel",
    "fieldtype": "Select",
    "label": "Payment Channel",
+<<<<<<< HEAD
    "options": "\nEmail\nPhone"
+=======
+   "options": "\nEmail\nPhone\nOther"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1,
+   "remember_last_selected_value": 1,
+   "reqd": 1
+>>>>>>> 02380c3eab (Merge pull request #48575 from aerele/company-payment-gateway)
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2020-09-20 13:30:27.722852",
+=======
+ "modified": "2025-07-14 16:49:55.210352",
+>>>>>>> 02380c3eab (Merge pull request #48575 from aerele/company-payment-gateway)
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Payment Gateway Account",
@@ -93,6 +112,14 @@
    "write": 1
   }
  ],
+<<<<<<< HEAD
  "sort_field": "modified",
  "sort_order": "DESC"
 }
+=======
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
+>>>>>>> 02380c3eab (Merge pull request #48575 from aerele/company-payment-gateway)

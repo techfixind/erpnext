@@ -539,7 +539,13 @@ def make_payment_request(**args):
 	if args.dt not in ALLOWED_DOCTYPES_FOR_PAYMENT_REQUEST:
 		frappe.throw(_("Payment Requests cannot be created against: {0}").format(frappe.bold(args.dt)))
 
+<<<<<<< HEAD
 	ref_doc = frappe.get_doc(args.dt, args.dn)
+=======
+	ref_doc = args.ref_doc or frappe.get_doc(args.dt, args.dn)
+	if not args.get("company"):
+		args.company = ref_doc.company
+>>>>>>> 02380c3eab (Merge pull request #48575 from aerele/company-payment-gateway)
 	gateway_account = get_gateway_details(args) or frappe._dict()
 
 	grand_total = get_amount(ref_doc, gateway_account.get("payment_account"))
@@ -782,6 +788,7 @@ def get_gateway_details(args):  # nosemgrep
 	"""
 	Return gateway and payment account of default payment gateway
 	"""
+<<<<<<< HEAD
 	gateway_account = args.get("payment_gateway_account", {"is_default": 1})
 	if gateway_account:
 		return get_payment_gateway_account(gateway_account)
@@ -789,6 +796,10 @@ def get_gateway_details(args):  # nosemgrep
 	gateway_account = get_payment_gateway_account({"is_default": 1})
 
 	return gateway_account
+=======
+	gateway_account = args.get("payment_gateway_account", {"is_default": 1, "company": args.company})
+	return get_payment_gateway_account(gateway_account)
+>>>>>>> 02380c3eab (Merge pull request #48575 from aerele/company-payment-gateway)
 
 
 def get_payment_gateway_account(args):
