@@ -1,3 +1,12 @@
+// Modern Design System - Import first for CSS variables
+@import "./modern-design-system";
+@import "./modern-sidebar";
+@import "./modern-dashboard";
+@import "./modern-forms";
+@import "./modern-lists";
+@import "./modern-mobile";
+
+// Original ERPNext styles
 @import "./erpnext";
 @import "./call_popup";
 @import "./point-of-sale";
