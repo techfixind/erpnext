@@ -38,4 +38,9 @@ import "./financial_statements.js";
 import "./sales_trends_filters.js";
 import "./purchase_trends_filters.js";
 
+// Modern UI Components
+import "./modern-sidebar.js";
+import "./modern-dashboard.js";
+import "./modern-layout.js";
+
 // import { sum } from 'frappe/public/utils/util.js'
